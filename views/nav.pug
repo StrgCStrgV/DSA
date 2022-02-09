@@ -1,0 +1,24 @@
+extends head.pug
+
+block head 
+
+  body        
+        nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.sticky-top
+          a.navbar-brand(href='/') Don'tStruggleAllone
+          button.navbar-toggler(type='button' data-toggle='collapse' 
+          data-target='#navbarNav' aria-controls='navbarNav')
+            span.navbar-toggler-icon
+          #navbarNav.collapse.navbar-collapse
+            ul.navbar-nav
+              li.nav-item.active
+                a.nav-link(href='/') Welcome!
+              li.nav-item
+                a.nav-link(href='/questions') Questions
+              li.nav-item
+                a.nav-link(href='/communityQuestions') CommunityQuestions
+              li.nav-item
+                //- button.btn.navbar-btn.button-nav-boo#button-nav(type='button') Sign in!
+                a(href="/users/login") Login 
+
+  block nav
+
